@@ -33,14 +33,11 @@ install.packages(c("Seurat", "ggplot2", "ggrepel", "dplyr",
 
 ```
 .
-├── data/
 │   ├── CpBGF_genome_V1.gff          # Reference genome annotation
 │   ├── CpBGFT2T.fasta                # Reference genome sequences
 │   └── rip_list.txt                  # Input gene names from RIP experiment
-├── scripts/
 │   ├── make_master_matrix.py         # Python script for matrix generation
 │   └── motif_analysis_script.R       # R script for visualization
-├── output/
 │   ├── cds_rna_motif_1_fimo/         # FIMO output directory
 │   ├── rip_list_mrna_cds_rna_motif/  # MEME output directory
 │   └── ...                            # Other intermediate files
