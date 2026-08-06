@@ -83,6 +83,28 @@ p_umap <- DimPlot(seurat_obj, reduction = "umap", group.by = "Cluster",
 print(p_umap)
 
 
+# Clusters 1-14 are grey, 15-18 are female specific hex color
+custom_colors <- c(rep("grey85", 14), 
+                   "#ff83fa", "#ee6ba7", "#ff6eb4", "#eea2ac")
+
+p_umap <- DimPlot(seurat_obj, reduction = "umap", group.by = "Cluster",
+                  pt.size = 1.5, cols = custom_colors) +  
+  ggtitle("UMAP — Clusters") +  
+  xlim(-11, 11) + ylim(-14, 8) +  
+  theme(  
+    panel.grid.major = element_blank(),  
+    panel.grid.minor = element_blank(),  
+    axis.line.x = element_line(color = "black"),  
+    axis.line.y = element_line(color = "black"),  
+    axis.text=element_text(size = 24),  
+    legend.key.size = unit(1.5, 'cm'),  
+    legend.text=element_text(size=24))+  
+  FontSize(x.title = 30, y.title = 30)+  
+  coord_fixed(ratio = 1)  
+
+print(p_umap) 
+
+
 meta <- seurat_obj@meta.data
 
 
