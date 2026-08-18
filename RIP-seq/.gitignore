@@ -1,0 +1,49 @@
+# macOS and editor metadata
+.DS_Store
+*.swp
+*~
+
+# R and RStudio session state
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Raw sequencing data and large alignment/coverage files
+RawData/
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.csi
+*.bw
+
+# Pipeline-generated directories
+trimmed_500/
+STAR_mRNA_lncRNA_only_clean_500bp/
+star_out_mRNA_lncRNA_only_clean_500bp/
+misaligned_read_filter_500bp/
+unique_transcriptome_bams_500bp/
+coord_bams_500_clean_unique/
+salmon_quant/
+salmon_logs/
+
+# Generated reference derivatives
+CpBGF_genome_V1.1_mRNA_lncRNA_only.gff
+CpBGF_genome_V1.1_mRNA_lncRNA_only_clean.gff
+CpBGF_genome_V1.1_mRNA_lncRNA_only_clean.gtf
+CpBGF_genome_V1.1.gtf
+CpBGF_genome_V1.1.transcripts.fasta
+*.fai
+
+# Logs and generated figures/tables
+*.log
+Analysis/output/
+Coverage_Plots/*.pdf
+Coverage_Plots/*.svg
