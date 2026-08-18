@@ -337,7 +337,7 @@ The script checks for all four expected Salmon outputs before analysis. It
 generates Figure 5B, Supplementary Figure 5, and the data underlying
 Supplementary Table 2 in `Analysis/output/`.
 
-## 9. Generate coordinate BAMs and BigWig coverage
+## 9. Generate RIP-seq coverage plots using coordinate BAMs and BigWig coverage files
 
 Create coordinate BAMs containing exactly the genomically unique reads retained
 in the final transcriptome BAMs:
@@ -402,4 +402,5 @@ Finally, open `Coverage_Plots/CoveragePlots.Rproj` in RStudio and run:
 - `CoveragePlot_cgd6_2450.R`
 
 The project sets `Coverage_Plots/` as the working directory, allowing the
-scripts to find the GTF and BigWig files one directory above it.
+scripts to find the GTF and BigWig files one directory above it. 
+These R scripts produce the RIP-seq coverage plots shown in Figure 5D.
